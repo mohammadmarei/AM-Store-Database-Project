@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="671.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.am_store.mainemployee">
+   <children>
+      <Pane layoutY="10.0" prefHeight="66.0" prefWidth="1127.0" styleClass="fontawesomeicon" visible="false">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1023.0" layoutY="16.0" prefHeight="11.0" prefWidth="11.0" styleClass="noti-num" text="88">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <AnchorPane layoutX="80.0" layoutY="47.0" prefHeight="626.0" prefWidth="1127.0">
+         <children>
+            <ImageView fitHeight="260.0" fitWidth="259.0" layoutX="425.0" layoutY="45.0" onMousePressed="#handlemonitor" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/m1-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="259.0" fitWidth="259.0" layoutX="836.0" layoutY="19.0" onMousePressed="#handlelaptop" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/lap5-removebg-preview.png" />
+               </image></ImageView>
+            <ImageView fitHeight="223.0" fitWidth="266.0" layoutX="35.0" layoutY="318.0" onMousePressed="#handlegaming" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/Screenshot_2024-12-28_225252-removebg-preview.png" />
+               </image></ImageView>
+            <ImageView fitHeight="208.0" fitWidth="364.0" layoutX="382.0" layoutY="349.0" onMousePressed="#handleprinter" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/Screenshot_2024-12-28_225647-removebg-preview.png" />
+               </image></ImageView>
+            <ImageView fitHeight="195.0" fitWidth="259.0" layoutX="841.0" layoutY="338.0" onMousePressed="#handlea" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/istockphoto-1267943701-612x612-removebg-preview.png" />
+               </image></ImageView>
+            <ImageView fitHeight="241.0" fitWidth="240.0" layoutX="40.0" layoutY="23.0" onMousePressed="#handlesmart" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../image/p4.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="87.0" layoutY="260.0" prefHeight="37.0" prefWidth="146.0" style="-fx-background-radius: 20; -fx-background-color: black;" text="     Smart phones    " textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="477.0" layoutY="260.0" prefHeight="37.0" prefWidth="146.0" style="-fx-background-radius: 20; -fx-background-color: black;" text="         Monitors" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="895.0" layoutY="260.0" prefHeight="37.0" prefWidth="146.0" style="-fx-background-radius: 20; -fx-background-color: black;" text="          Laptops" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="95.0" layoutY="542.0" prefHeight="37.0" prefWidth="146.0" style="-fx-background-radius: 20; -fx-background-color: black;" text="         Gaming" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="482.0" layoutY="542.0" prefHeight="37.0" prefWidth="146.0" style="-fx-background-radius: 20; -fx-background-color: black;" text="         Printers" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="898.0" layoutY="542.0" prefHeight="37.0" prefWidth="146.0" style="-fx-background-radius: 20; -fx-background-color: black;" text="       Accessories" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style Bold Italic" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="475.0" layoutY="14.0" prefHeight="46.0" prefWidth="290.0" style="-fx-background-radius: 20; -fx-background-color: black;" text="      Categories" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Bookman Old Style Bold Italic" size="30.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutY="108.0" prefHeight="570.0" prefWidth="80.0" style="-fx-background-color: #CCCECB;" styleClass="sidebar">
+         <children>
+            <Pane layoutY="-119.0" prefHeight="662.0" prefWidth="80.0" style="-fx-background-color: #CCCECB;" styleClass="sidebar">
+               <children>
+                  <HBox alignment="CENTER" layoutY="292.0" onMousePressed="#switchtoorder" prefHeight="66.0" prefWidth="80.0" style="-fx-background-color: #CCCECB;" styleClass="boxtab">
+                     <children>
+                        <HBox alignment="BOTTOM_CENTER" prefHeight="66.0" prefWidth="66.0" style="-fx-background-color: #CCCECB;">
+                           <children>
+                              <VBox alignment="TOP_CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="55.0" prefWidth="66.0" style="-fx-background-color: #CCCECB;">
+                                 <children>
+                                    <Label prefHeight="26.0" prefWidth="122.0" text="      Order" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="11.7" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets left="1.0" top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutY="590.0" onMousePressed="#switchtocustomer" prefHeight="66.0" prefWidth="80.0" style="-fx-background-color: #CCCECB;" styleClass="boxtab">
+                     <children>
+                        <HBox alignment="BOTTOM_CENTER" prefHeight="66.0" prefWidth="66.0">
+                           <children>
+                              <VBox alignment="TOP_CENTER" prefHeight="55.0" prefWidth="66.0">
+                                 <children>
+                                    <Line endX="-47.34754180908203" endY="0.20157292366027832" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                                    <Label prefHeight="17.0" prefWidth="61.0" text="Customer" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutY="390.0" onMousePressed="#switchtoproduct" prefHeight="66.0" prefWidth="80.0" style="-fx-background-color: #CCCECB;" styleClass="boxtab">
+                     <children>
+                        <HBox alignment="BOTTOM_CENTER" prefHeight="65.0" prefWidth="75.0" style="-fx-background-color: #CCCECB;">
+                           <children>
+                              <VBox alignment="TOP_CENTER" prefHeight="65.0" prefWidth="622.0" style="-fx-background-color: #CCCECB;">
+                                 <children>
+                                    <ImageView fitHeight="46.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../image/product-29.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Line endX="-47.34754180908203" endY="0.20157292366027832" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutY="90.0" prefHeight="66.0" prefWidth="80.0" style="-fx-background-color: #CCCECB;" styleClass="boxtab">
+                     <children>
+                        <HBox alignment="BOTTOM_CENTER" onMousePressed="#switchtohome" prefHeight="66.0" prefWidth="66.0" style="-fx-background-color: #CCCECB;">
+                           <children>
+                              <VBox alignment="TOP_CENTER" prefHeight="55.0" prefWidth="66.0" style="-fx-background-color: #CCCECB;">
+                                 <children>
+                                    <ImageView fitHeight="38.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../image/3e20181e-b78e-4d5d-beb4-82b27f6ad8e9.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Line endX="-47.34754180908203" endY="0.20157292366027832" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                                    <Label prefHeight="17.0" prefWidth="37.0" text="Home" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <ImageView fitHeight="54.0" fitWidth="55.0" layoutX="16.0" layoutY="529.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../image/customer.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="75.0" fitWidth="89.0" layoutX="-5.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../image/Screenshot%202024-12-05%20233717.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="58.0" fitWidth="59.0" layoutX="14.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../image/order.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="14.0" layoutY="448.0" prefHeight="17.0" prefWidth="52.0" text="Products">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Line endX="-47.34754180908203" endY="0.20157292366027832" layoutX="119.0" layoutY="291.0" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

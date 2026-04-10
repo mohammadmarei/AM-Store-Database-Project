@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.am_store.HelloApplication">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="402.0" prefWidth="679.0">
+         <children>
+            <ImageView fitHeight="402.0" fitWidth="613.0" layoutX="215.0" layoutY="32.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../image/Screenshot%202024-12-05%20234013.png" />
+               </image>
+            </ImageView>
+            <AnchorPane prefHeight="434.0" prefWidth="299.0">
+               <children>
+                  <Label layoutX="105.0" layoutY="113.0" prefHeight="59.0" prefWidth="122.0" text="Welcome!">
+                     <font>
+                        <Font name="Bodoni MT Poster Compressed" size="50.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="61.0" layoutY="180.0" prefHeight="17.0" prefWidth="224.0" text=" Choose your organization:">
+                     <font>
+                        <Font name="Bodoni MT Poster Compressed" size="30.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="employee_butoon" layoutX="77.0" layoutY="308.0" mnemonicParsing="false" onAction="#Employee_button" prefHeight="50.0" prefWidth="184.0" style="-fx-background-color: BLACK; -fx-background-radius: 20;" text=" Employee" textFill="WHITE">
+                     <font>
+                        <Font name="Bodoni MT Condensed" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Manager_Button" layoutX="77.0" layoutY="228.0" mnemonicParsing="false" onAction="#Manage_button" prefHeight="50.0" prefWidth="184.0" style="-fx-background-color: BLACK; -fx-background-radius: 20;" text="Manager" textFill="WHITE">
+                     <font>
+                        <Font name="Bodoni MT Poster Compressed" size="25.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="42.0" fitWidth="44.0" layoutX="78.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../image/Screenshot_2024-12-06_224459-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="89.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../image/images%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="119.0" fitWidth="144.0" layoutX="90.0" pickOnBounds="true" smooth="false">
+                     <image>
+                        <Image url="@../../../image/Screenshot%202024-12-05%20233717.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

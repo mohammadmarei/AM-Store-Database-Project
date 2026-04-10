@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="704.0" prefWidth="1210.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.am_store.product">
+    <children>
+        <AnchorPane layoutY="10.0" prefHeight="672.0" prefWidth="1210.0">
+            <children>
+                <AnchorPane layoutY="119.0" prefHeight="553.0" prefWidth="80.0" style="-fx-background-color: #CCCECB;" styleClass="sidebar">
+                    <children>
+                        <Pane layoutY="-129.0" prefHeight="662.0" prefWidth="80.0" style="-fx-background-color: #CCCECB;" styleClass="sidebar">
+                            <children>
+                                <HBox alignment="CENTER" layoutY="190.0" onMousePressed="#switchtoorder" prefHeight="66.0" prefWidth="80.0" style="-fx-background-color: #CCCECB;" styleClass="boxtab">
+                                    <children>
+                                        <HBox alignment="BOTTOM_CENTER" prefHeight="66.0" prefWidth="66.0" style="-fx-background-color: #CCCECB;">
+                                            <children>
+                                                <VBox alignment="TOP_CENTER" prefHeight="55.0" prefWidth="66.0" style="-fx-background-color: #CCCECB;">
+                                                    <children>
+                                                        <Line endX="-47.34754180908203" endY="0.20157292366027832" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                                                        <Label prefHeight="26.0" prefWidth="122.0" text="      Order" textAlignment="CENTER">
+                                                            <font>
+                                                                <Font name="System Bold" size="11.7" />
+                                                            </font>
+                                                            <VBox.margin>
+                                                                <Insets left="1.0" top="5.0" />
+                                                            </VBox.margin>
+                                                        </Label>
+                                                    </children>
+                                                </VBox>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER" layoutY="292.0" onMousePressed="#switchtoproduct" prefHeight="66.0" prefWidth="80.0" style="-fx-background-color: #CCCECB;" styleClass="boxtab">
+                                    <children>
+                                        <HBox alignment="BOTTOM_CENTER" prefHeight="66.0" prefWidth="66.0" style="-fx-background-color: #CCCECB;">
+                                            <children>
+                                                <VBox alignment="TOP_CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="55.0" prefWidth="66.0" style="-fx-background-color: #CCCECB;">
+                                                    <children>
+                                                        <Line endX="-47.34754180908203" endY="0.20157292366027832" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                                                        <Label prefHeight="17.0" prefWidth="52.0" text="Products">
+                                                            <font>
+                                                                <Font name="System Bold" size="12.0" />
+                                                            </font>
+                                                            <VBox.margin>
+                                                                <Insets left="1.0" top="5.0" />
+                                                            </VBox.margin>
+                                                        </Label>
+                                                    </children>
+                                                </VBox>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER" layoutY="490.0" onMousePressed="#switchtoemployee" prefHeight="66.0" prefWidth="80.0" style="-fx-background-color: #CCCECB;" styleClass="boxtab">
+                                    <children>
+                                        <HBox alignment="BOTTOM_CENTER" prefHeight="66.0" prefWidth="66.0">
+                                            <children>
+                                                <VBox alignment="TOP_CENTER" prefHeight="55.0" prefWidth="66.0">
+                                                    <children>
+                                                        <Line endX="-47.34754180908203" endY="0.20157292366027832" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                                                        <Label prefHeight="26.0" prefWidth="122.0" text="Employee" textAlignment="CENTER">
+                                                            <font>
+                                                                <Font name="System Bold" size="12.0" />
+                                                            </font>
+                                                            <VBox.margin>
+                                                                <Insets left="1.0" top="5.0" />
+                                                            </VBox.margin>
+                                                        </Label>
+                                                    </children>
+                                                </VBox>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER" layoutY="590.0" onMousePressed="#switchtostatistics" prefHeight="66.0" prefWidth="80.0" style="-fx-background-color: #CCCECB;" styleClass="boxtab">
+                                    <children>
+                                        <HBox alignment="BOTTOM_CENTER" prefHeight="66.0" prefWidth="66.0">
+                                            <children>
+                                                <VBox alignment="TOP_CENTER" prefHeight="55.0" prefWidth="66.0">
+                                                    <children>
+                                                        <Line endX="-47.34754180908203" endY="0.20157292366027832" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                                                        <Label prefHeight="26.0" prefWidth="58.0" text="Statistics" textAlignment="CENTER">
+                                                            <font>
+                                                                <Font name="System Bold" size="12.0" />
+                                                            </font>
+                                                            <VBox.margin>
+                                                                <Insets left="1.0" top="5.0" />
+                                                            </VBox.margin>
+                                                        </Label>
+                                                    </children>
+                                                </VBox>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER" layoutY="390.0" onMousePressed="#switchtocustomer" prefHeight="66.0" prefWidth="80.0" style="-fx-background-color: #CCCECB;" styleClass="boxtab">
+                                    <children>
+                                        <HBox alignment="BOTTOM_CENTER" prefHeight="65.0" prefWidth="75.0" style="-fx-background-color: #CCCECB;">
+                                            <children>
+                                                <VBox alignment="TOP_CENTER" prefHeight="65.0" prefWidth="622.0" style="-fx-background-color: #CCCECB;">
+                                                    <children>
+                                                        <Line endX="-47.34754180908203" endY="0.20157292366027832" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                                                        <Label prefHeight="17.0" prefWidth="61.0" text="Customer" textAlignment="CENTER">
+                                                            <font>
+                                                                <Font name="System Bold" size="12.0" />
+                                                            </font>
+                                                            <VBox.margin>
+                                                                <Insets left="1.0" top="5.0" />
+                                                            </VBox.margin>
+                                                        </Label>
+                                                    </children>
+                                                </VBox>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER" layoutY="90.0" prefHeight="66.0" prefWidth="80.0" style="-fx-background-color: #CCCECB;" styleClass="boxtab">
+                                    <children>
+                                        <HBox alignment="BOTTOM_CENTER" onMousePressed="#switchtohome" prefHeight="66.0" prefWidth="66.0" style="-fx-background-color: #CCCECB;">
+                                            <children>
+                                                <VBox alignment="TOP_CENTER" prefHeight="55.0" prefWidth="66.0" style="-fx-background-color: #CCCECB;">
+                                                    <children>
+                                                        <Line endX="-47.34754180908203" endY="0.20157292366027832" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+                                                        <Label prefHeight="17.0" prefWidth="37.0" text="Home" textAlignment="CENTER">
+                                                            <font>
+                                                                <Font name="System Bold" size="12.0" />
+                                                            </font>
+                                                            <VBox.margin>
+                                                                <Insets left="1.0" top="5.0" />
+                                                            </VBox.margin>
+                                                        </Label>
+                                                    </children>
+                                                </VBox>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </HBox>
+                                <ImageView fitHeight="38.0" fitWidth="37.0" layoutX="21.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../image/3e20181e-b78e-4d5d-beb4-82b27f6ad8e9.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fitHeight="54.0" fitWidth="55.0" layoutX="15.0" layoutY="347.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../image/customer.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fitHeight="46.0" fitWidth="52.0" layoutX="18.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../image/product.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fitHeight="80.0" fitWidth="54.0" layoutX="11.0" layoutY="447.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../image/employee.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fitHeight="58.0" fitWidth="65.0" layoutX="9.0" layoutY="538.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../image/statistics.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fitHeight="75.0" fitWidth="89.0" layoutX="-5.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../image/Screenshot%202024-12-05%20233717.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fitHeight="58.0" fitWidth="59.0" layoutX="11.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../image/order.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </Pane>
+                    </children>
+                </AnchorPane>
+                <Pane layoutY="10.0" prefHeight="66.0" prefWidth="1127.0" styleClass="fontawesomeicon" visible="false">
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1023.0" layoutY="16.0" prefHeight="11.0" prefWidth="11.0" styleClass="noti-num" text="88">
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+                <TableView fx:id="t_product" layoutX="98.0" layoutY="59.0" prefHeight="613.0" prefWidth="696.0">
+                    <columns>
+                        <TableColumn fx:id="ID" editable="false" prefWidth="100.0" sortable="false" text="product_id" />
+                        <TableColumn fx:id="name" editable="false" prefWidth="101.0" sortable="false" text="product_name" />
+                        <TableColumn fx:id="category" editable="false" prefWidth="101.0" sortable="false" text="Category" />
+                        <TableColumn fx:id="brand" editable="false" prefWidth="102.0" sortable="false" text="brand" />
+                        <TableColumn fx:id="description" editable="false" sortable="false" text="description" />
+                        <TableColumn fx:id="BonusPersentage" editable="false" prefWidth="90.0" sortable="false" text="Bonus %" visible="false" />
+                        <TableColumn fx:id="quantity" editable="false" minWidth="0.0" prefWidth="90.0" sortable="false" text="quantity" />
+                        <TableColumn fx:id="price" editable="false" prefWidth="121.0" sortable="false" text="price" />
+                    </columns>
+                </TableView>
+                <AnchorPane fx:id="anchorPane" layoutX="824.0" layoutY="58.0" prefHeight="454.0" prefWidth="355.0" style="-fx-background-color: #FFF; -fx-background-radius: 20;">
+                    <effect>
+                        <DropShadow blurType="GAUSSIAN" height="10.0" radius="4.5" width="10.0">
+                            <color>
+                                <Color red="0.6973684430122375" green="0.6973684430122375" blue="0.6973684430122375" />
+                            </color>
+                        </DropShadow>
+                    </effect>
+                    <children>
+                        <TextField fx:id="pr_id" layoutX="42.0" layoutY="88.0" prefHeight="36.0" prefWidth="258.0" promptText="product_id">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                        </TextField>
+                        <TextField fx:id="pr_name" layoutX="42.0" layoutY="143.0" prefHeight="36.0" prefWidth="258.0" promptText="product name">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                        </TextField>
+                        <TextField fx:id="pr_beand" layoutX="42.0" layoutY="240.0" prefHeight="36.0" prefWidth="258.0" promptText="brand">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <tooltip>
+                                <Tooltip fx:id="tooltipSalary" text="Salary Per Month : " />
+                            </tooltip>
+                        </TextField>
+                        <TextField fx:id="BonusTextField" layoutX="42.0" layoutY="338.0" prefHeight="36.0" prefWidth="258.0" promptText="Bonus Percentage" styleClass="text_field" visible="false">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                        </TextField>
+                        <TextField fx:id="pr_description" editable="true" layoutX="42.0" layoutY="289.0" prefHeight="36.0" prefWidth="258.0" promptText="description">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                        </TextField>
+                        <TextField fx:id="pr_quantity" editable="true" layoutX="42.0" layoutY="338.0" prefHeight="36.0" prefWidth="258.0" promptText="quantity">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                        </TextField>
+                        <TextField fx:id="pr_price" editable="true" layoutX="42.0" layoutY="388.0" prefHeight="36.0" prefWidth="258.0" promptText="price">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                        </TextField>
+                        <Button fx:id="image" layoutX="118.0" layoutY="30.0" mnemonicParsing="false" onAction="#add_image" prefHeight="39.0" prefWidth="130.0" style="-fx-background-radius: 30;" text="add image" />
+                  <ComboBox fx:id="pr_cat" layoutX="43.0" layoutY="193.0" prefHeight="36.0" prefWidth="258.0" promptText="Category" />
+                    </children>
+                </AnchorPane>
+                <Label layoutX="381.0" layoutY="10.0" prefHeight="35.0" prefWidth="130.0" text="Product List">
+                    <font>
+                        <Font name="Bodoni MT Poster Compressed" size="36.0" />
+                    </font>
+                </Label>
+                <Button fx:id="addProductButton" layoutX="850.0" layoutY="517.0" mnemonicParsing="false" onAction="#action_add" prefHeight="36.0" prefWidth="104.0" style="-fx-background-radius: 20; -fx-background-color: #06ae27;" text="Add " textFill="WHITE">
+                    <font>
+                        <Font name="Bodoni MT Poster Compressed" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="updateProductButton" layoutX="1011.0" layoutY="517.0" mnemonicParsing="false" onAction="#action_update" prefHeight="36.0" prefWidth="110.0" style="-fx-background-radius: 20; -fx-background-color: #ebbf11;" text="Update" textFill="WHITE">
+                    <font>
+                        <Font name="Bodoni MT Poster Compressed" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="searchProductButton" layoutX="850.0" layoutY="576.0" mnemonicParsing="false" onAction="#action_search" prefHeight="36.0" prefWidth="104.0" style="-fx-background-radius: 20; -fx-background-color: #13a3eb;" text="Search" textFill="WHITE">
+                    <font>
+                        <Font name="Bodoni MT Poster Compressed" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="deleteProductButton" layoutX="1011.0" layoutY="576.0" mnemonicParsing="false" onAction="#action_delete" prefHeight="36.0" prefWidth="110.0" style="-fx-background-radius: 20; -fx-background-color: #940a0a;" text="Delete" textFill="WHITE">
+                    <font>
+                        <Font name="Bodoni MT Poster Compressed" size="20.0" />
+                    </font>
+                </Button>
+            <Button fx:id="view" layoutX="842.0" layoutY="629.0" mnemonicParsing="false" onAction="#action_view" prefHeight="39.0" prefWidth="120.0" style="-fx-background-radius: 20; -fx-background-color: #13a3eb;" text="View product" textFill="WHITE">
+               <font>
+                  <Font name="Bodoni MT Poster Compressed" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="searchProductButton1" layoutX="1014.0" layoutY="629.0" mnemonicParsing="false" onAction="#print" prefHeight="36.0" prefWidth="104.0" style="-fx-background-radius: 20; -fx-background-color: black;" text="Print" textFill="WHITE">
+               <font>
+                  <Font name="Bodoni MT Poster Compressed" size="20.0" />
+               </font>
+            </Button>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

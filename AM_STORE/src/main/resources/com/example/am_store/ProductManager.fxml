@@ -1,0 +1,21 @@
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.GridPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.am_store.ProductManagerController">
+    <children>
+        <VBox spacing="10" layoutX="20" layoutY="20">
+            <TextField fx:id="txtName" promptText="Product Name" />
+            <TextField fx:id="txtCategory" promptText="Category" />
+            <TextField fx:id="txtBrand" promptText="Brand" />
+            <TextArea fx:id="txtDescription" promptText="Description" />
+            <TextField fx:id="txtQuantity" promptText="Quantity" />
+            <TextField fx:id="txtPrice" promptText="Price" />
+            <Button text="Choose Image" onAction="#chooseImage" />
+            <Button text="Add Product" onAction="#addProduct" />
+            <GridPane fx:id="gridPane" />
+        </VBox>
+    </children>
+</AnchorPane>
